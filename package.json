@@ -1,0 +1,24 @@
+{
+  "name": "easy-admin-template-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdidar/easy-admin-template-tailwind.git"
+  },
+  "author": "Mohammad Didarul Alam <emdidar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emdidar/easy-admin-template-tailwind/issues"
+  },
+  "homepage": "https://github.com/emdidar/easy-admin-template-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
