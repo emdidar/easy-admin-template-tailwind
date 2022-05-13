@@ -1,5 +1,6 @@
 # easy-admin-template-tailwind
 Admin Template (Tailwind CSS)
 
-    1. npm install -D tailwindcss
-    2. npm start
+    1. nmp init -y
+    2. npm i -D tailwindcss
+    3. npm start
