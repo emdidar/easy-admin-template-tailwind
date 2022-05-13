@@ -3,5 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-  
+  .main {
+    background-image: url('../images/bg-pattern-light.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin:auto;
+    z-index: -1;
+  }
+  .input{
+      display:block;
+      border:1px solid #ccc;
+      line-height:1.5;
+      padding:.45rem .9rem;
+      font-size:.9rem;
+      border-radius:4px;
+      margin-top: 10px;
+      transition: .5s all;
+  }
+  .input:hover, .input:focus{
+      border:1px solid #ccc;
+      outline:none;
+  }
 }
