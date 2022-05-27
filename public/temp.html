@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Easy Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/font-awesome/css/all.min.css" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body class="font-poppins text-gray-800">
+  <div class="flex flex-row h-screen">
+    <!-- Sidebar Start -->
+    <aside class="flex flex-col h-full w-1/4 bg-[#313a46] p-3">
+      <div class="pb-7 flex justify-center ">
+        <img src="../public/images/logo.png" alt="logo" class="w-10 h-10 bg-white rounded-full" />
+        <h1 class="font-bold text-white ml-2 mt-2 uppercase">Easy Dashboard</h1>
+      </div>
+      <div class=" text-xs uppercase font-semibold text-gray-300 pl-8">
+        <h3>Navigation</h3>
+      </div>
+      <div id="dashboard" class="pl-8 pr-4 py-4 text-xl text-gray-300 cursor-pointer flex items-center gap-3 relative ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <h2 class="text-sm font-bold ">Dashboard</h2>
+        <div class="ml-auto"><span
+            class="bg-green-500 text-gray-100 text-xs font-semibold px-2.5 py-0.5 rounded ">4</span>
+        </div>
+      </div>
+      <div id="e-commerce"
+        class="pl-8 pr-4 py-2 text-xl text-gray-300 hover:text-gray-100  cursor-pointer flex items-center gap-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+        </svg>
+
+        <h2 class="text-sm font-bold ">E-commerce</h2>
+        <div class="ml-auto">
+          <svg id="right_arrow" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+          <svg id="down_arrow" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <div class="flex flex-col w-full">
+
+      <!-- Header Section Start -->
+      <header class="flex h-20 bg-gray-100 border border-gray-100 shadow-sm transition">
+
+        <!-- toggle icon Start -->
+        <div class="self-center m-3 cursor-pointer items-center">
+          <span class="navbar-toggle text-slate-900">
+            <i class="fa-solid fa-bars" id="toggle-icon"></i>
+          </span>
+        </div>
+        <!-- toggle icon End -->
+
+        <!-- Search Box Start -->
+        <div class="flex items-center mr-auto">
+          <div class="relative">
+            <input type="text"
+              class="w-72 bg-gray-200 p-2 pl-8 pr-8 rounded-lg shadow-sm focus:outline-none focus:shadow-outline"
+              placeholder="Search" />
+            <div class="absolute top-0 left-0 mt-2 ml-2">
+              <i class="fa-solid fa-search text-gray-600"></i>
+            </div>
+            <span class="absolute top-0 right-0">
+              <button type="submit"
+                class="bg-indigo-500 hover:bg-indigo-400 text-white rounded-tr rounded-br py-2 px-3">Search</button>
+            </span>
+          </div>
+        </div>
+        <!-- Search Box End -->
+
+        <!-- Language Start -->
+        <div class="flex items-center p-4">
+          <div class="">
+            <select class="w-full p-2 focus:outline-none focus:shadow-outline">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>Gujarati</option>
+            </select>
+          </div>
+        </div>
+        <!-- Language End -->
+
+        <!-- Notification Start -->
+        <div class="flex items-center p-4 cursor-pointer">
+          <div class="relative">
+            <i class="fa-solid fa-bell text-gray-600"></i>
+            <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded "></span>
+          </div>
+        </div>
+        <!-- Notification End -->
+
+        <!-- Settings Start -->
+        <div class="flex items-center p-4 cursor-pointer">
+          <i class="fa-solid fa-cog text-gray-600"></i>
+        </div>
+        <!-- Settings End -->
+
+        <!-- Settings Start -->
+        <div class="flex items-center p-4 cursor-pointer">
+          <i class="fa-solid fa-table-cells text-gray-600"></i>
+        </div>
+        <!-- Settings End -->
+
+        <!-- User Start -->
+        <div class="flex items-center p-4">
+          <div id="profile" class="flex border h-16 px-4 items-center cursor-pointer">
+            <img class="w-8 h-8 rounded-full object-cover " src="../public/images/user.png" alt="">
+            <div class="hidden lg:block ml-4 capitalize leading-tight">
+                <p>Md fayezullah<br> <span class="text-xs">founder</span></p>
+            </div>
+        </div>
+        <div id="profile_list"
+            class="absolute transition-all duration-500 w-48 z-50 mt-64 bg-gray-50 right-0 rounded-b-md  py-2 space-y-2 ">
+            <h2 class="text-xs font-semibold px-4 py-2 capitalize">welcome !</h2>
+            <div class="capitalize">
+
+                <a class="transition py-2 px-4 flex items-center gap-2 hover:bg-gray-200" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    My account</a>
+                <a class="transition py-2 px-4 flex items-center gap-2 hover:bg-gray-200" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                    setting</a>
+                <a class="transition py-2 px-4 flex items-center gap-2 hover:bg-gray-200" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    support</a>
+                <a class="transition py-2 px-4 flex items-center gap-2 hover:bg-gray-200" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    logout</a>
+            </div>
+        </div>
+        </div>
+        <!-- User End -->
+
+
+
+      </header>
+      <!-- Header Section End -->
+
+      <!-- Main Section Start -->
+      <main class="m-2 p-2 h-full">
+        <div class="flex gap-5">
+          <div class="flex w-1/2 gap-5">
+            <div class="basis-1/2 bg-white border border-gray-100 shadow-sm transition">
+              Hello
+            </div>
+            <div class="basis-1/2 bg-white border border-gray-100 shadow-sm transition">
+              Hello
+            </div>
+          </div>
+          <div class="w-1/2">
+            <div class="basis-1/2 bg-white border border-gray-100 shadow-sm transition">
+              Hello
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Main Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="flex h-20 bg-gray-100 text-gray-900">
+        <p class="m-auto">2022 &copy Easy Dashboard by Didarul Alam</p>
+      </footer>
+      <!-- Footer Section End -->
+    </div>
+    <!-- Main End -->
+
+
+  </div>
+
+  <!-- Start Script -->
+  <script>
+    const profile = document.querySelector('#profile');
+    const profile_list = document.querySelector('#profile_list');
+    profile.addEventListener('click', () => {
+      profile_list.classList.toggle('hidden');
+    });
+
+
+
+  </script>
+  <!-- End Scripts -->
+</body>
+
+</html>
