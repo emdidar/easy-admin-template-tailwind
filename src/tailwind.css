@@ -27,4 +27,25 @@
       border:1px solid #ccc;
       outline:none;
   }
+
+  .cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width:100px;
+    height:30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    shadow: 0 0 10px rgba(0,0,0,.1);
+    background-color: #fff;
+  }
+  .cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
 }
